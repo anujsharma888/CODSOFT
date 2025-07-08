@@ -31,9 +31,9 @@ Features:
 
 Input two numbers
 
-Choose operation: addition, subtraction, multiplication, or division
+Choose operation: addition, subtraction, multiplication, division, exponential, greater
 
-Display the calculated result
+Display the calcudivision sult
 
 
 
