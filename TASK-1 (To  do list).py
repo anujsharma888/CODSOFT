@@ -1,12 +1,9 @@
 import streamlit as st
 import csv
 
-# Define the path to the CSV file
 CSV_FILE = "tasks.csv"
 
-# Define the main function
 def main():
-    # Set the title of the web app
     st.title("To-Do List")
     st.markdown(
          f'''
@@ -21,10 +18,8 @@ def main():
          unsafe_allow_html=True
      )
 
-    # Load the tasks from the CSV file
     task_list = load_tasks()
 
-    # Add a form to input new tasks
     task_input = st.text_input("Add a new task:")
     if st.button("Add"):
         if task_input != "":
@@ -35,10 +30,8 @@ def main():
 
     
 
-    # Add a button to clear the task list
     if st.button("Clear all tasks"):
-        # Clear the task list and save the changes to the CSV file
-        task_list.clear()
+           task_list.clear()
         save_tasks(task_list)
         display(task_list)        
 
@@ -52,7 +45,6 @@ def load_tasks():
         task_list = []
     return task_list
 def display(task_list):
-    # Display the current tasks
     if len(task_list) == 0:
         st.write("No tasks added yet.")
     else:
@@ -68,6 +60,5 @@ def save_tasks(task_list):
         writer = csv.writer(f)
         writer.writerows([[task] for task in task_list])
 
-# Run the app
 if __name__ == "_main_":
     main()
