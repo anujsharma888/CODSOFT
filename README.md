@@ -92,8 +92,7 @@ Simple and clean command-line interface
 
 
 ---
-
-# Technologies Used
+Technologies Used
 
 Python 3
 
