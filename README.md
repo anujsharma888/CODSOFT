@@ -88,14 +88,3 @@ Search contacts by name or phone number
 Store details like name, email, phone number, and address
 
 Simple and clean command-line interface
-
-
-
----
-Technologies Used
-
-Python 3
-
-Built-in modules: random, os etc.
-
-Command-line interface (CLI)
